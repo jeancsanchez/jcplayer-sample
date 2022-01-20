@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4CAF50"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgDismiss"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/audio_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        app:next_icon_color="@android:color/white"
+        app:pause_icon_color="@android:color/white"
+        app:play_icon_color="@android:color/white"
+        app:previous_icon_color="@android:color/white"
+        app:progress_color="@android:color/white"
+        app:seek_bar_color="@android:color/white"
+        app:show_random_button="false"
+        app:show_repeat_button="false"
+        app:text_audio_current_duration_color="@android:color/white"
+        app:text_audio_duration_color="@android:color/white"
+        app:text_audio_title_color="@android:color/white" />
+</LinearLayout>
