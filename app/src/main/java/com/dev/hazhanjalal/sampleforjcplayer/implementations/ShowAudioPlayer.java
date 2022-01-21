@@ -53,7 +53,8 @@ public class ShowAudioPlayer {
         wlp.gravity = Gravity.TOP;
         wlp.flags &= ~WindowManager.LayoutParams.FLAG_DIM_BEHIND;
         window.setAttributes(wlp);
-        
+
+        audio_player.resume();
         dialog.show();
     }
     
